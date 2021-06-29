@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgplain"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="10sp"
+        android:text="Temperature \nConverter"
+        android:textAlignment="textStart"
+        android:textColor="#09000B"
+        android:textColorHint="#FF0000"
+        android:textColorLink="#EAE4E4"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudyday" />
+
+    <EditText
+        android:id="@+id/etTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Temprature in ℃"
+        android:inputType="number"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#009688"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvshow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/roundbtn"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvshow" />
+
+    <TextView
+        android:id="@+id/tvshow"
+        android:layout_width="253dp"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
